@@ -1,0 +1,63 @@
+{
+    "registered_voters": {
+        "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5": {
+            "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAth5ZJwhiE3cetP5/hn1L\npcwIv98fAITI2VB8x2a3j7fNnavY9ehiMEcAV3T+bzAz09C9TakvH61aD4womluH\nuM4nrXFil7Isl5cRPFGRULdf8sIbUeIphjHC3Al9fiVhkI2LCEn3eZ3JVVBENzQP\n258GkEQlMTV0ZSiIiJHiKnLM7Uhf+6+OVBncHPscK+OkZaglBZJ7tDpET3qtgKSg\nYs08kEVxIzDN6BOmEnkBpNAOyjQZ4paGNjjhMNdXOrvErIMEnYJpFNOADpI28gES\n7H3jx0hDP28fY/Dz9p/M99SdL2odlpp7mfWtiUhOojpAg8iOK+hLikvL9M758xGP\nZwIDAQAB\n-----END PUBLIC KEY-----\n",
+            "has_voted": true,
+            "registration_date": "2025-12-01T15:26:06.535680"
+        },
+        "4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8": {
+            "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwuRMtFDCNMsk/ZRkmobx\n+CKWBACzo6iSsLZH0myvPa4wfjWlg/lLjT1Rfj5GSv4pHb4IocSnmGb0LUwSNkrW\ngSpRWGUAPVAu1N3d3W3JF+UiS5/tHPQdAUL4nQXrXRaw/CUjga1v6JOQbp3ZebyM\n7FeLK8ou4XZLi6OjXpRuukufi8hpiaF83VcckvkYEeB0YtP9h0LoOrqZxVMmiLet\n14ro7Xf0cjRASLhlegw5AmghG61nUe8J7BTIimQXMqKVZt1FkaAk0RIWKuR+VamT\ngYA3RrZt1g5/X3ejABlA3kBG84dOE9q1a1IsysqxC1OlZnHL72J+adkS6Eq+fzkA\nCwIDAQAB\n-----END PUBLIC KEY-----\n",
+            "has_voted": true,
+            "registration_date": "2025-12-01T15:29:27.115799"
+        },
+        "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918": {
+            "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlb/VQNBYBoUruYdRrXnT\nS/sNsVtNNW4ZGjGNUGH0gqOw6CYEyVFxSyjygliKF6KpmDnVUqN5S6y+5oqdwkQm\nEpRX9+a20nhVpELcQHsSwGHhlQtc1kA1yVOZjgWx8IpTDJ1D1yTs6dFR1bAVVxgM\nBUP22EI/EbWCw7GP4Vvt1eb9rIuDyIQxx+NK2TZVyeecPZXfgG3ksgjc/VDOx24o\nGIKolXx+ITjqPQaNMxREbmmCMf+hJdkNQLx/5YasM8Y/evrDqLYeNsxiZENDpWN8\nwjsb0LFC1L/RKKL1/nV7zK9FsyvRaHY4Ks0WvZrCwqjojr9gQXHIqf7V3bI1zleG\nIQIDAQAB\n-----END PUBLIC KEY-----\n",
+            "has_voted": true,
+            "registration_date": "2025-12-02T05:35:24.303060"
+        },
+        "3fdba35f04dc8c462986c992bcf875546257113072a909c162f7e470e581e278": {
+            "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzUAM4JDkxQmyrNDJSAC0\n0QIQfEmzBD7RuioIFWrOv5NboR3SodFbzCiZaINcepwexYtfpDjJEO/rYUq/6jYX\nauu9Ei8p90Rz4hxuLO4izNi/BhM4ehVcj8jm180ZDm5dX51kQDyYkcwjj9DQljF0\ndh8xtvnstlAlUu02M7hQo6shMejzPABbSZzyeOc9dTpYXIQ4SebMr5wBZHtPgGCv\nfpJ74OIVhS4TB+Y6rzGoqV9xZq6bUhxDqLbPK9uovt7podmoL4P/6Q7Zp/QIUOE3\n6NjcWokRADdFnwYXJ+x0qw5qOuDsSnW7cbdvA4DRiRW7JpW35S32lPEM3Savt+7K\nrQIDAQAB\n-----END PUBLIC KEY-----\n",
+            "has_voted": true,
+            "registration_date": "2025-12-02T05:36:00.071456"
+        }
+    },
+    "votes": [
+        {
+            "voter_hash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+            "vote_message": "Je vote et",
+            "vote_hash": "d2b2d0c27e06f2125702544f1e45bb21d34816f70905b569d187aaefe8b334fb",
+            "signature": "e/Doyxa6VGGlcfNWM8yQmZH7Tqy7z4VxVmO3+nzrc259CiAr3LZUCbZju7+Z/yyhzmuxTkRTG5H5NKLPoAUkwRyJDafXhTBZmFJSdtCmBb/OwBf6A+0ErhLnOfZs8gKu75SFko8UVRVFh4oiiZNFLxilcqcZbedIRc05xvzg5cICD6uviFJ03PquzY6Ygf2FxKyAYMBpqQ4eJ11/ILeJSgpErIvOkLwzBmdkVz8UYHyVkVUK7VDr5rkV7HOdMen1BBm+yD5sxulAxEQoRcszN1/vFUaGh+FrU5Deass3qXmisf/Iw/hcQ9Meox+dLPRXlgBBRfTcRwhkKyaikiQ8TQ==",
+            "candidate": "et",
+            "timestamp": "2025-12-01T15:27:34.139508"
+        },
+        {
+            "voter_hash": "4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8",
+            "vote_message": "Je vote ey",
+            "vote_hash": "1f32d217173fecf2efaf471ded059d982be0d67d5509493fa83ca9a835f02e8e",
+            "signature": "usIRr7nxh4gce8xiDSusQJmSxmtKh3iylu+10rByfvmRz12o8DsWlR1EeFjQTVhljEb+lUO7lIBuX1iY4Lv572GxQyLmOgD/DD2msGVLq4m5tLQLRMvpxfjajWQa2cDV1V34cVrWQyaQ5yo3wrqRkn3LMOl4Sj7mociuVqc/qxePIcClMhgIMgZRjQIeJUmx57cpfrB6jNgJtfy6UguDLDIlyOwk7ONHi+hD6OddbKj+lm4wkp2PpBHGyAVyocT6SO1rUu3DHHrOR/HP6BO6+bXxfgbJ8psyP9dy7D2QzDsWNVzDYKGLF1icvRx9hyZ8FZy0NFhj72FY4ZwL0uUXYg==",
+            "candidate": "ey",
+            "timestamp": "2025-12-02T05:36:38.537518"
+        },
+        {
+            "voter_hash": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
+            "vote_message": "Je vote et",
+            "vote_hash": "d2b2d0c27e06f2125702544f1e45bb21d34816f70905b569d187aaefe8b334fb",
+            "signature": "i3Yem2iuuOdTAetST8mkB+wyWc/y1rgAh4Lu943PsVH20U2hLB7m7rO9BCeyS3ljx28tkmFZjuISmf9K2bCiEeoUvDXzToNFGnMYvtBvQYbVTZQWsdw/u1KVfuOQ1zYZXlQiJsXXHgMSQrsbou3xwynKX4H/173q6Ix+Uvzp9chSAbP45n7lWdO+3Wn6Xfi8Sl9C0ARDiFCoABYP/Ge+NyUZiEpcpfqY3UuqFX+kRk8OBUrMxwVRmi6WNYSCREqj3DQI3ZVvnb9ueOP1K9UPTJYbLoMTuWmQyMv6p/PXGfuWQzPmrBMiMSY2cmY6dTM03NJ8STOUtfxFJqrm5RIyaw==",
+            "candidate": "et",
+            "timestamp": "2025-12-02T05:37:02.246734"
+        },
+        {
+            "voter_hash": "3fdba35f04dc8c462986c992bcf875546257113072a909c162f7e470e581e278",
+            "vote_message": "Je vote ey",
+            "vote_hash": "1f32d217173fecf2efaf471ded059d982be0d67d5509493fa83ca9a835f02e8e",
+            "signature": "A0BnB0dKvoot3xcSrFUW5SXGTOcTaRIA8ktMYwM9djJHDGQa0uo2WAIPnZP3pvLoqoeTHWxmFeaTMaOToEUsSJNbt+0CTxXJ6dKM//dED0U57YNDpOzUrIckdhkRNYn3SKGAg6VM310IiiPqtFvsb20qg4uS5RWSr6WTa9T3pb5k1BCbLodFT9zly79SBYh5oTLYMTSEpJycAnHMxyFMR3caQhs+WrLgqQ6WB0vhp04oDh1k1x1hPUlHryB/yCI7xSkrs42ckVMPJW3eXch9wLIUENAmkp5hKWjLBGc5uwahgaeiGjZszW8YEK/sp6UeiSIFqVMiIDrpTkPVpxJixg==",
+            "candidate": "ey",
+            "timestamp": "2025-12-02T05:37:27.297635"
+        }
+    ],
+    "candidates": [
+        "er",
+        "et",
+        "ey"
+    ]
+}
