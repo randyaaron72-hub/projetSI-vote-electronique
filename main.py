@@ -255,3 +255,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+if __name__ == "__main__":
+    # Votre logique existante
+    main()
+    
+    # NOUVEAU : Garde l'application en vie pour Railway
+    print("\n✅ Script terminé. Démarrage du serveur web pour Railway...")
+    from http.server import HTTPServer, BaseHTTPRequestHandler
+    import os
+    class Handler(BaseHTTPRequestHandler):
+        def do_GET(self):
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            self.wfile.write(b'<h1>Système de Vote Actif</h1><p>Script exécuté avec succès</p>')
+    
+    port = int(os.environ.get('PORT', 8080))
+    server = HTTPServer(('0.0.0.0', port), Handler)
+    print(f"🌐 Serveur actif sur le port {port}")
+    server.serve_forever()
