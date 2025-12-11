@@ -1,4 +1,5 @@
 {
-  "build": {"builder": "NIXPACKS"},
-  "deploy": {"startCommand": "python railway_fix.py"}
+  "build": {
+    "builder": "NIXPACKS"
+  }
 }
