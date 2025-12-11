@@ -1,4 +1,10 @@
 {
-  "build": {"builder": "NIXPACKS"},
-  "deploy": {"startCommand": "chmod +x railway-start.sh && ./railway-start.sh"}
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "python railway-wrapper.py",
+    "restartPolicyType": "ALWAYS"
+  }
 }
