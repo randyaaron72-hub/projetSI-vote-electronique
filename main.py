@@ -1,40 +1,3 @@
-#!/usr/bin/env python3
-import os
-import sys
-
-def detect_railway_environment():
-    if os.environ.get("RAILWAY_ENVIRONMENT") or os.environ.get("RAILWAY"):
-        return True
-    if not sys.stdin.isatty():
-        return True
-    if "RAILWAY" in str(os.environ):
-        return True
-    return False
-
-if detect_railway_environment():
-    original_input = input
-    
-    def railway_input(prompt=""):
-        if prompt:
-            print(prompt)
-        
-        if "Choisir le mode" in prompt or "mode" in prompt.lower():
-            response = "1"
-            print(f"[Réponse automatique : {response}]")
-            return response
-        elif "votre choix" in prompt.lower() or "choix" in prompt.lower():
-            response = "1"
-            print(f"[Réponse automatique : {response}]")
-            return response
-        elif "nom" in prompt.lower() or "pseudo" in prompt.lower():
-            return "Utilisateur_Railway"
-        elif "email" in prompt.lower():
-            return "test@railway.app"
-        else:
-            print(f"[Input automatique pour: {prompt[:30]}...]")
-            return "default"
-    
-    input = railway_input
 from voting_system import VotingSystem
 import os
 
@@ -252,46 +215,4 @@ def main():
         interactive_mode()
     else:
         print("❌ Mode invalide")
-        if __name__ == "__main__":
-    try:
-        # 1. Exécute votre logique de vote
-        main()
-        
-        # 2. Message de succès
-        print("✅ Script principal terminé avec succès.")
-        
-    except Exception as e:
-        # 3. Capture TOUTE erreur pour la voir dans les logs
-        print(f"⚠️ Erreur dans main(): {type(e).__name__}: {e}")
-        import traceback
-        traceback.print_exc()
-    
-    # 4. Démarrage GARANTI du serveur web, même après une erreur
-    print("🌐 Démarrage du serveur web pour Railway...")
-    
-    from http.server import HTTPServer, BaseHTTPRequestHandler
-    import os
-    
-    class Handler(BaseHTTPRequestHandler):
-        def do_GET(self):
-            self.send_response(200)
-            self.send_header('Content-type', 'text/plain; charset=utf-8')
-            self.end_headers()
-            message = "🗳️ Système de Vote Électronique\nStatut: En ligne\nLe script a été exécuté."
-            self.wfile.write(message.encode('utf-8'))
-        
-        def log_message(self, format, *args):
-            # Réduit le bruit dans les logs
-            pass
-    
-    port = int(os.environ.get('PORT', 8080))
-    server = HTTPServer(('0.0.0.0', port), Handler)
-    
-    print(f"🚀 Serveur accessible sur: http://0.0.0.0:{port}")
-    print(f"📡 Votre URL publique sera disponible sous peu.")
-    
-    try:
-        server.serve_forever()
-    except KeyboardInterrupt:
-        print("\nArrêt du serveur.")
-
+       
