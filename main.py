@@ -1,3 +1,40 @@
+#!/usr/bin/env python3
+import os
+import sys
+
+def detect_railway_environment():
+    if os.environ.get("RAILWAY_ENVIRONMENT") or os.environ.get("RAILWAY"):
+        return True
+    if not sys.stdin.isatty():
+        return True
+    if "RAILWAY" in str(os.environ):
+        return True
+    return False
+
+if detect_railway_environment():
+    original_input = input
+    
+    def railway_input(prompt=""):
+        if prompt:
+            print(prompt)
+        
+        if "Choisir le mode" in prompt or "mode" in prompt.lower():
+            response = "1"
+            print(f"[Réponse automatique : {response}]")
+            return response
+        elif "votre choix" in prompt.lower() or "choix" in prompt.lower():
+            response = "1"
+            print(f"[Réponse automatique : {response}]")
+            return response
+        elif "nom" in prompt.lower() or "pseudo" in prompt.lower():
+            return "Utilisateur_Railway"
+        elif "email" in prompt.lower():
+            return "test@railway.app"
+        else:
+            print(f"[Input automatique pour: {prompt[:30]}...]")
+            return "default"
+    
+    input = railway_input
 from voting_system import VotingSystem
 import os
 
