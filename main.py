@@ -252,25 +252,46 @@ def main():
         interactive_mode()
     else:
         print("❌ Mode invalide")
-
-if __name__ == "__main__":
-    main()
-if __name__ == "__main__":
-    # Votre logique existante
-    main()
+        if __name__ == "__main__":
+    try:
+        # 1. Exécute votre logique de vote
+        main()
+        
+        # 2. Message de succès
+        print("✅ Script principal terminé avec succès.")
+        
+    except Exception as e:
+        # 3. Capture TOUTE erreur pour la voir dans les logs
+        print(f"⚠️ Erreur dans main(): {type(e).__name__}: {e}")
+        import traceback
+        traceback.print_exc()
     
-    # NOUVEAU : Garde l'application en vie pour Railway
-    print("\n✅ Script terminé. Démarrage du serveur web pour Railway...")
+    # 4. Démarrage GARANTI du serveur web, même après une erreur
+    print("🌐 Démarrage du serveur web pour Railway...")
+    
     from http.server import HTTPServer, BaseHTTPRequestHandler
     import os
+    
     class Handler(BaseHTTPRequestHandler):
         def do_GET(self):
             self.send_response(200)
-            self.send_header('Content-type', 'text/html')
+            self.send_header('Content-type', 'text/plain; charset=utf-8')
             self.end_headers()
-            self.wfile.write(b'<h1>Système de Vote Actif</h1><p>Script exécuté avec succès</p>')
+            message = "🗳️ Système de Vote Électronique\nStatut: En ligne\nLe script a été exécuté."
+            self.wfile.write(message.encode('utf-8'))
+        
+        def log_message(self, format, *args):
+            # Réduit le bruit dans les logs
+            pass
     
     port = int(os.environ.get('PORT', 8080))
     server = HTTPServer(('0.0.0.0', port), Handler)
-    print(f"🌐 Serveur actif sur le port {port}")
-    server.serve_forever()
+    
+    print(f"🚀 Serveur accessible sur: http://0.0.0.0:{port}")
+    print(f"📡 Votre URL publique sera disponible sous peu.")
+    
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print("\nArrêt du serveur.")
+
