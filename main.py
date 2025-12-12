@@ -1,3 +1,8 @@
+import sys
+if not sys.stdin.isatty():
+    def input(prompt=""):
+        print(prompt + " [AUTO:1]")
+        return "1"
 from voting_system import VotingSystem
 import os
 
